@@ -1,0 +1,149 @@
+body {
+    width: 100%;
+    min-height: 100vh;
+    margin: 0px;
+    overflow: hidden;
+}
+
+.main1 {
+    width: 100%;
+    min-height: 100vh;
+    background: url(../assets/room3.jpeg) no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.carpet {
+    width: 700px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+}
+
+.carpet > img {
+    width: 700px;
+    height: 700px;
+    transform: rotateX(250deg);
+}
+
+.chair {
+    width: 250px;
+    height: 350px;
+    z-index: 1;
+    position: absolute;
+    margin-bottom: 150px;
+    display: flex;
+    flex-direction: column;
+}
+
+.chair > img{
+    width: 250px;
+    height: 250px;
+}
+
+.cat {
+    width: 150px;
+    height: 150px; 
+    position:absolute
+}
+
+.cat > img {
+    width: 150px;
+    height: 150px;
+    animation: cat-animation 2.0s infinite;
+}
+
+@keyframes cat-animation {
+    from {
+        transform: rotate(-0deg);
+    }
+    to {
+        transform: rotate(10deg);
+    } 
+}
+
+.logo {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.yarn {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    margin-top: 150px;
+}
+
+.yarn > img {
+    width: 50px;
+    height: 50px;
+    z-index: 1;
+    animation: ball-rotate 1.0s infinite;
+}
+
+@keyframes ball-rotate {
+    from {
+        transform: rotate(-0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    } 
+}
+
+.yarn1 {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    z-index: 1;
+}
+
+.yarn1 > img {
+    width: 50px;
+    height: 50px;
+}
+
+.pillow {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+}
+
+.pillow > img {
+    width: 60px;
+    height: 60px;
+}
+
+.line1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.line {
+    width: 350px;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    font-size: large;
+    z-index: 1;
+}
+
+.button {
+    width: 150px;
+    height: 40px;
+    background-color: rgb(247, 151, 7);
+    border: 1px solid white;
+    border-radius: 25px;
+    text-align: center;
+    margin-top: 15px;
+    font-size: 30px;
+    cursor: pointer;
+}
