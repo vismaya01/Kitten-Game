@@ -119,8 +119,8 @@ body {
 }
 
 .carpet > img {
-    width: 500px;
-    height: 500px;
+    width: 700px;
+    height: 700px;
     transform: rotateX(250deg);
 }
 
@@ -137,8 +137,9 @@ body {
     width: 450px;
     background-color: #e75480 ;
     border: 3px solid black;
-    border-radius: 15px;
+    border-radius: 55px;
     display: flex;
+    justify-content: center;
 }
 
 .number {
@@ -355,7 +356,10 @@ body {
     0% {
         transform: translateX(10px);
     }
+    20% {
+        transform: rotate(100deg);
+    }
     100% {
-        transform: translateX(-30px);
+        transform: translateX(-40px);
     }
 }

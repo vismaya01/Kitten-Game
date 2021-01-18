@@ -95,11 +95,17 @@ body {
 }
 
 .button1:hover {
-    background-color: #25668f;
-    color: white;
+    background-color: #25668f;   
 }
 
+a {
+    text-decoration: auto;
+    color:#25668f
+}
 
+.button1:hover a {
+    color: white;
+}
 
 
 
